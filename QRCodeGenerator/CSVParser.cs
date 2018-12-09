@@ -12,7 +12,7 @@ namespace QRCodeGenerator
             _filePath = filePath;
         }
 
-        public IEnumerable<IEnumerable<string>> ReadInColumn(IEnumerable<int> columnIndexes)
+        public List<List<string>> ReadInColumn(IEnumerable<int> columnIndexes)
         {
             var result = new List<List<string>>();
             var content = File.ReadLines(_filePath);
